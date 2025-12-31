@@ -1,0 +1,17 @@
+
+This file documents the observations for Part 2: File Encryption & Decryption.
+
+   Observations for Salsa20 and ChaCha20:
+-   File Sizes: The size of the encrypted file (`..._Encrypted.bin`) is identical to the size of the original plaintext file (`..._Part1_...txt`). This is expected behavior for stream ciphers, as they perform a one-to-one XOR operation on bytes without adding any padding.
+-   Encryption/Decryption Time: The time taken for decryption is almost identical to the time taken for encryption. This is because the underlying process is the same: generating a keystream and XORing it with the input data.
+-   File Comparison: A comparison between the original file (`..._Part1_...txt`) and the decrypted file (`..._decrypted.txt`) shows that they are byte-for-byte identical. This confirms that the encryption and decryption processes worked correctly.
+
+Justification for Needing Only One Program:
+No, two separate programs for encryption and decryption are not needed.
+
+Stream ciphers like Salsa20 and ChaCha20 work by generating a pseudorandom keystream from a key and a nonce. This keystream is then combined with the plaintext using the XOR operation (`Plaintext ⊕ Keystream = Ciphertext`).
+
+The property of XOR is that it is its own inverse. This means:
+`Ciphertext ⊕ Keystream = (Plaintext ⊕ Keystream) ⊕ Keystream = Plaintext`
+
+Therefore, the exact same function can be used for both encryption and decryption. The function simply needs to take the input data (be it plaintext or ciphertext) and XOR it with the keystream generated from the same key and nonce. This is why the `salsa20_crypt` and `chacha20_crypt` functions are used for both operations.

@@ -1,0 +1,82 @@
+-- Running Salsa20 Assignment ---
+Part 1: Performing diffusion analysis...
+Part 1 analysis saved to CS25M028_CS6530_Assgn1_Part1_Salsa20.txt
+File size: 40534 bytes 
+
+Part 2: Performing file encryption and decryption...
+Encryption completed in 0.062321 seconds.
+Encrypted file saved to CS25M028_CS6530_Assgn1_Part1_Salsa20_Encrypted.bin
+File size: 40534 bytes
+Decryption completed in 0.052308 seconds. 
+Decrypted file saved to CS25M028_CS6530_Assgn1_Part1_Salsa20_decrypted.txt
+Verification successful: Original and decrypted files are identical.
+
+Part 3: Performing performance analysis...
+WARNING: Log switch is ON. Performance measurement will be inaccurate.
+Salsa20 performance: Encrypted 1 MB in 1.578274 seconds.
+Approximate speed: 0.63 MB/s
+Compare this with the performance of the reference C implementation.
+------------------------------
+
+--- Running ChaCha20 Assignment ---
+Part 1: Performing diffusion analysis...
+Part 1 analysis saved to CS25M028_CS6530_Assgn1_Part1_ChaCha20.txt
+File size: 40944 bytes 
+
+Part 2: Performing file encryption and decryption...
+Encryption completed in 0.050383 seconds. 
+Encrypted file saved to CS25M028_CS6530_Assgn1_Part1_ChaCha20_Encrypted.bin
+File size: 40944 bytes 
+Decryption completed in 0.095874 seconds. 
+Decrypted file saved to CS25M028_CS6530_Assgn1_Part1_ChaCha20_decrypted.txt
+Verification successful: Original and decrypted files are identical.
+
+Part 3: Performing performance analysis...
+WARNING: Log switch is ON. Performance measurement will be inaccurate.
+ChaCha20 performance: Encrypted 1 MB in 1.827950 seconds.
+Approximate speed: 0.55 MB/s
+Compare this with the performance of the reference C implementation.s
+------------------------------
+
+Assignment script finished and all output files have been generated.
+
+=========================================================
+ Running a second pass with LOGS OFF for performance analysis.
+=========================================================
+
+--- Running Salsa20 Assignment ---
+Part 1: Performing diffusion analysis...
+Part 1 analysis saved to CS25M028_CS6530_Assgn1_Part1_Salsa20.txt
+File size: 322 bytes 
+
+Part 2: Performing file encryption and decryption...
+Encryption completed in 0.001001 seconds.
+Encrypted file saved to CS25M028_CS6530_Assgn1_Part1_Salsa20_Encrypted.bin
+File size: 322 bytes
+Decryption completed in 0.000998 seconds. 
+Decrypted file saved to CS25M028_CS6530_Assgn1_Part1_Salsa20_decrypted.txt
+Verification successful: Original and decrypted files are identical.
+
+Part 3: Performing performance analysis...
+Salsa20 performance: Encrypted 1 MB in 1.609440 seconds.
+Approximate speed: 0.62 MB/s
+Compare this with the performance of the reference C implementation.
+------------------------------
+
+--- Running ChaCha20 Assignment ---
+Part 1: Performing diffusion analysis...
+Part 1 analysis saved to CS25M028_CS6530_Assgn1_Part1_ChaCha20.txt
+File size: 328 bytes 
+
+Part 2: Performing file encryption and decryption...
+Encryption completed in 0.000000 seconds. 
+Encrypted file saved to CS25M028_CS6530_Assgn1_Part1_ChaCha20_Encrypted.bin
+File size: 328 bytes 
+Decryption completed in 0.000000 seconds. 
+Decrypted file saved to CS25M028_CS6530_Assgn1_Part1_ChaCha20_decrypted.txt
+Verification successful: Original and decrypted files are identical.
+
+Part 3: Performing performance analysis...
+ChaCha20 performance: Encrypted 1 MB in 1.763885 seconds.
+Approximate speed: 0.57 MB/s
+Compare this with the performance of the reference C implementation.

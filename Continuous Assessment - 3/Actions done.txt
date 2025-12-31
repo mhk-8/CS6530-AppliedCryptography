@@ -1,0 +1,7 @@
+1. Installed kali Linux through Virtual Box
+2. The command " yum -y install openssl " to install openssl didn't worked in kali Linux 
+	so, I used " apt install openssl " command to install openssl 
+3. In step 2 , It was mentioned to create two separate openssl.cnf file (each for root and intermediate CA).
+	But there no clarification in which directory should we create these files 
+	Intially i created them in rootCA and intermediateCA directories , but that doest worrked while executing next commands
+	then I Created these file in myCA directory and it Worked

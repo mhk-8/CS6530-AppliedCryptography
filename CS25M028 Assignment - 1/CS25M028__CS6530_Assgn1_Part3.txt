@@ -1,0 +1,22 @@
+
+This file documents the performance comparison for Part 3.
+
+   How to Re-create Analysis:
+1.  Run the `main.py` script with the `LOG_CORE_STATE` variable set to `False`.
+2.  The script will print the time taken to encrypt 1MB of data and the corresponding speed in MB/s for both my Python implementation of Salsa20 and ChaCha20.
+3.  To get the reference performance, download the C code from Prof. Bernstein's website (https://cr.yp.to/snuffle.html and https://cr.yp.to/chacha.html).
+4.  Compile the C code using a C compiler (like GCC) and run their performance tests.
+5.  Compare the speed reported by the Python script with the speed of the compiled C code.
+
+   My Performance Observations:
+
+
+-   My Python Salsa20 Speed    : Approximately 0.63 MB/s
+-   Reference C Salsa20 Speed  : Approximately 25.5 MB/s
+
+-   My Python ChaCha20 Speed    : Approximately 0.56 MB/s
+-   Reference C ChaCha20 Speed  : Approximately 22.6 MB/s
+
+   Analysis:
+-   My Python implementation is significantly slower than the reference C implementation. It is to be expected. C is a compiled language that runs directly as machine code, providing high performance and low-level memory management. Because Python is an interpreted language with a large overhead, it is by nature slower for CPU-intensive operations such as cryptographic calculations.
+-   Salsa20 vs. ChaCha20 Performance in my Python code  : I observed that ChaCha20 was slightly slower than Salsa20 . ChaCha20 was designed to offer better performance by improving instruction-level parallelism, which might not be fully realized in a single-threaded Python implementation but can show a small difference. The key reason is that ChaCha20's quarter round has fewer rotation distances, which can be more efficient on some CPU architectures.

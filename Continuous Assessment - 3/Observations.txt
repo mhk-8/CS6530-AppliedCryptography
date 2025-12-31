@@ -1,0 +1,11 @@
+Here are some observations from this assignment:
+
+The "Chain of Trust" is more than just a concept. I realized I was literally building the chain, file by file. It became clear how the server certificate is trusted because of the intermediate, and the intermediate is trusted because of the root.
+
+I now understand why we use a two-tier CA structure. It's all about security. My Root CA is the ultimate source of trust, which I should keep offline. The Intermediate CA is the one I'd use for the actual work of signing certificates, minimizing risk to the root key.
+
+The configuration files are everything. I learned very quickly that one small typo in the openssl.cnf file could stop the entire process. It's obvious that these files are the blueprint that controls the whole PKI setup.
+
+Being organized is non-negotiable. This assignment forced me to be meticulous. I had to manage the different types of files—private keys, CSRs, and certificates—and I definitely won't forget the importance of setting strict permissions like chmod 400 on the private keys.
+
+OpenSSL acts like a mini-database. It was interesting to watch the index.txt file update automatically. It kept a running log of every certificate I issued, showing me that I wasn't just running commands, but managing a system that keeps track of its own state.

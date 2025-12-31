@@ -1,0 +1,16 @@
+ CS6530 Applied Cryptography - Assignment 1 - Salsa20 Analysis 
+Roll Number: CS25M028
+
+Analysis for Counter values 0 and 1 
+Key: all zeros, Nonce: all zeros
+
+--- COUNTER 0 ---
+
+--- COUNTER 1 ---
+
+Analysis for Counter values 28 and 29 
+Key: all zeros, Nonce: all zeros
+
+--- COUNTER 28 ---
+
+--- COUNTER 29 ---

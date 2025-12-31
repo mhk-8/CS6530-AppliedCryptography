@@ -1,0 +1,15 @@
+Python
+
+venv/pycache/*.pyc
+
+Database
+
+*.db*.sqlite3
+
+Secrets
+
+*.ini
+
+Uploads
+
+uploads/downloads/*.log
