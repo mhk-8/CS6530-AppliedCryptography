@@ -1,0 +1,43 @@
+(venv) PS C:\Users\majji\OneDrive\Desktop\mtech_learninng\Applied_cryptography\secure_dms> python client.py
+--- Secure Hybrid DMS Client Demo ---
+[CLIENT] Setting up local test directories...
+[ADMIN] (User 1) is setting up the demo environment...
+[SERVER] STATUS: 201, DATA: {'permission_id': 2, 'resource_id': 2, 'role_id': 2, 'status': 'success'}
+[SERVER] STATUS: 201, DATA: {'permission_id': 2, 'resource_id': 3, 'role_id': 4, 'status': 'success'}
+[SERVER] STATUS: 201, DATA: {'permission_id': 1, 'resource_id': 2, 'role_id': 2, 'status': 'success'}
+
+[DEMO] --- Testing RBAC (Uploads) ---
+[ALICE] Uploading 'alice_secret.txt' to /Engineering (Folder ID 2)...
+[SERVER] STATUS: 201, DATA: {'filename': 'alice_secret.txt', 'resource_id': 4, 'status': 'File uploaded'}
+[ALICE] SUCCESS: File uploaded (ID: 4)
+[BOB] Uploading 'bob_plan.txt' to /Engineering (Folder ID 2)...
+[SERVER] STATUS: 403, DATA: {'error': 'Permission denied. Reason: FAILED'}
+[BOB] FAILED to upload file.
+[BOB] Server returned 403. (This is the correct behavior!)
+
+[DEMO] --- Testing DAC (Owner Download) ---
+[ALICE] Attempting to download file ID 4...
+[ALICE] SUCCESS: File downloaded and saved as 'downloaded_by_alice.txt'.
+[SERVER] STATUS: 200, DATA: (File content streamed)
+[BOB] Attempting to download file ID 4...
+[SERVER] STATUS: 403, DATA: {'error': 'Permission denied. Reason: FAILED'}
+[BOB] FAILED to download file.
+
+[DEMO] --- Testing DAC (ACL Sharing) ---
+[ALICE] Sharing file ID 4 with User 4 with permissions: ['read']...
+[SERVER] STATUS: 200, DATA: {'resource_id': 4, 'status': 'Share successful', 'target_user_id': 4}
+[ALICE] SUCCESS: File shared.
+[CAROL] Attempting to download file ID 4...
+[CAROL] SUCCESS: File downloaded and saved as 'downloaded_by_carol.txt'.
+[SERVER] STATUS: 200, DATA: (File content streamed)
+
+[DEMO] --- Testing DAC (ACL Revoke) ---
+[ALICE] Revoking access for User 4 from file ID 4...
+[SERVER] STATUS: 200, DATA: {'status': 'Revoke successful'}
+[ALICE] SUCCESS: Access revoked.
+[CAROL] Attempting to download file ID 4...
+[SERVER] STATUS: 403, DATA: {'error': 'Permission denied. Reason: FAILED'}
+[CAROL] FAILED to download file.
+[CLIENT] Cleaning up local test files...
+
+--- Demo Finished ---

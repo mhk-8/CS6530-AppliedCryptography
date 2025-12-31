@@ -1,0 +1,117 @@
+PS C:\Users\majji\OneDrive\Desktop\mtech_learninng\Applied_cryptography\secure_dms> Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+PS C:\Users\majji\OneDrive\Desktop\mtech_learninng\Applied_cryptography\secure_dms> .\venv\Scripts\Activate.ps1
+(venv) PS C:\Users\majji\OneDrive\Desktop\mtech_learninng\Applied_cryptography\secure_dms> Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+>> .\venv\Scripts\Activate.ps1
+(venv) PS C:\Users\majji\OneDrive\Desktop\mtech_learninng\Applied_cryptography\secure_dms> pip install -r requirements.txt
+Collecting Flask
+  Downloading flask-3.1.2-py3-none-any.whl (103 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.3/103.3 kB 853.8 kB/s eta 0:00:00
+Collecting cryptography
+  Downloading cryptography-46.0.3-cp38-abi3-win_amd64.whl (3.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.5/3.5 MB 757.4 kB/s eta 0:00:00
+Collecting requests
+  Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.7/64.7 kB 865.0 kB/s eta 0:00:00
+Collecting click>=8.1.3
+  Downloading click-8.3.0-py3-none-any.whl (107 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 107.3/107.3 kB 1.2 MB/s eta 0:00:00
+Collecting blinker>=1.9.0
+  Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Collecting itsdangerous>=2.2.0
+  Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Collecting markupsafe>=2.1.1
+  Downloading markupsafe-3.0.3-cp310-cp310-win_amd64.whl (15 kB)
+Collecting jinja2>=3.1.2
+  Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 799.1 kB/s eta 0:00:00
+Collecting werkzeug>=3.1.0
+  Downloading werkzeug-3.1.3-py3-none-any.whl (224 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 224.5/224.5 kB 686.7 kB/s eta 0:00:00
+Collecting typing-extensions>=4.13.2
+  Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.6/44.6 kB 731.4 kB/s eta 0:00:00
+Collecting cffi>=2.0.0
+  Downloading cffi-2.0.0-cp310-cp310-win_amd64.whl (182 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 182.8/182.8 kB 850.0 kB/s eta 0:00:00
+Collecting urllib3<3,>=1.21.1
+  Downloading urllib3-2.5.0-py3-none-any.whl (129 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 129.8/129.8 kB 854.0 kB/s eta 0:00:00
+Collecting charset_normalizer<4,>=2
+  Downloading charset_normalizer-3.4.4-cp310-cp310-win_amd64.whl (107 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 107.2/107.2 kB 889.5 kB/s eta 0:00:00
+Collecting idna<4,>=2.5
+  Downloading idna-3.11-py3-none-any.whl (71 kB)
+Collecting certifi>=2017.4.17
+Collecting certifi>=2017.4.17
+  Downloading certifi-2025.10.5-py3-none-any.whl (163 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 163.3/163.3 kB 702.0 kB/s eta 0:00:00
+Collecting pycparser
+  Downloading pycparser-2.23-py3-none-any.whl (118 kB)
+Collecting certifi>=2017.4.17
+  Downloading certifi-2025.10.5-py3-none-any.whl (163 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 163.3/163.3 kB 702.0 kB/s eta 0:00:00
+Collecting pycparser
+  Downloading pycparser-2.23-py3-none-any.whl (118 kB)
+  Downloading certifi-2025.10.5-py3-none-any.whl (163 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 163.3/163.3 kB 702.0 kB/s eta 0:00:00
+Collecting pycparser
+  Downloading pycparser-2.23-py3-none-any.whl (118 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 163.3/163.3 kB 702.0 kB/s eta 0:00:00
+Collecting pycparser
+  Downloading pycparser-2.23-py3-none-any.whl (118 kB)
+Collecting pycparser
+  Downloading pycparser-2.23-py3-none-any.whl (118 kB)
+  Downloading pycparser-2.23-py3-none-any.whl (118 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.1/118.1 kB 863.2 kB/s eta 0:00:00
+Collecting colorama
+Collecting colorama
+  Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+  Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Installing collected packages: urllib3, typing-extensions, pycparser, markupsafe, itsdangerous, idna, colorama, charset_normalizer, certifi, blinker, werkzeug, requests, jinja2, click, cffi, Flask, cryptography
+Successfully installed Flask-3.1.2 blinker-1.9.0 certifi-2025.10.5 cffi-2.0.0 charset_normalizer-3.4.4 click-8.3.0 colorama-0.4.6 cryptography-46.0.3 idna-3.11 itsdangerous-2.2.0 jinja2-3.1.6 markupsafe-3.0.3 pycparser-2.23 requests-2.32.5 typing-extensions-4.15.0 urllib3-2.5.0 werkzeug-3.1.3
+-extensions-4.15.0 urllib3-2.5.0 werkzeug-3.1.3
+
+
+(venv) PS C:\Users\majji\OneDrive\Desktop\mtech_learninng\Applied_cryptography\secure_dms> Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+>> .\venv\Scripts\Activate.ps1
+
+(venv) PS C:\Users\majji\OneDrive\Desktop\mtech_learninng\Applied_cryptography\secure_dms> python database.py              
+Creating new database...
+All tables created successfully.
+Populating initial data...
+Initial data populated.
+Database setup complete. File 'secure-data.db' is ready.
+
+
+(venv) PS C:\Users\majji\OneDrive\Desktop\mtech_learninng\Applied_cryptography\secure_dms> python app.py
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 315-646-847
+[AUDIT] admin (1) check 'ADMIN_GRANT role 2 perm 2 on folder 2' on resource Engineering (2) > SUCCESS (N/A)
+127.0.0.1 - - [24/Oct/2025 00:12:22] "POST /api/admin/roles/2/assign-permission HTTP/1.1" 201 -
+[AUDIT] admin (1) check 'ADMIN_GRANT role 4 perm 2 on folder 3' on resource HR (3) > SUCCESS (N/A)
+127.0.0.1 - - [24/Oct/2025 00:12:22] "POST /api/admin/roles/4/assign-permission HTTP/1.1" 201 -
+[AUDIT] admin (1) check 'ADMIN_GRANT role 2 perm 1 on folder 2' on resource Engineering (2) > SUCCESS (N/A)
+127.0.0.1 - - [24/Oct/2025 00:12:22] "POST /api/admin/roles/2/assign-permission HTTP/1.1" 201 -
+[AUDIT] alice (2) check 'write' on resource Engineering (2) > SUCCESS (RBAC_DIRECT)
+127.0.0.1 - - [24/Oct/2025 00:12:22] "POST /api/files/upload HTTP/1.1" 201 -
+[AUDIT] bob (3) check 'write' on resource Engineering (2) > FAILED (FAILED)
+127.0.0.1 - - [24/Oct/2025 00:12:22] "POST /api/files/upload HTTP/1.1" 403 -
+[AUDIT] alice (2) check 'read' on resource alice_secret.txt (4) > SUCCESS (DAC_OWNER)
+127.0.0.1 - - [24/Oct/2025 00:12:22] "GET /api/files/4/download HTTP/1.1" 200 -
+127.0.0.1 - - [24/Oct/2025 00:12:22] "GET /api/files/4/download HTTP/1.1" 200 -
+[AUDIT] bob (3) check 'read' on resource alice_secret.txt (4) > FAILED (FAILED)
+127.0.0.1 - - [24/Oct/2025 00:12:22] "GET /api/files/4/download HTTP/1.1" 403 -
+[AUDIT] alice (2) check 'SHARE with 4' on resource alice_secret.txt (4) > SUCCESS (N/A)
+127.0.0.1 - - [24/Oct/2025 00:12:22] "POST /api/files/4/share HTTP/1.1" 200 -
+[AUDIT] carol (4) check 'read' on resource alice_secret.txt (4) > SUCCESS (DAC_ACL)
+127.0.0.1 - - [24/Oct/2025 00:12:22] "GET /api/files/4/download HTTP/1.1" 200 -
+[AUDIT] alice (2) check 'REVOKE from 4' on resource alice_secret.txt (4) > SUCCESS (N/A)
+127.0.0.1 - - [24/Oct/2025 00:12:22] "POST /api/files/4/revoke HTTP/1.1" 200 -
+[AUDIT] carol (4) check 'read' on resource alice_secret.txt (4) > FAILED (FAILED)
+127.0.0.1 - - [24/Oct/2025 00:12:22] "GET /api/files/4/download HTTP/1.1" 403 -
